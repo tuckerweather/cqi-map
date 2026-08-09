@@ -24,7 +24,7 @@ const map = L.map("map", {
 
 map.attributionControl.setPrefix(false);
 map.attributionControl.addAttribution(
-  "CQI © Tucker Weather | Boundaries: U.S. Census Bureau"
+  "CQI © Tucker Antico | Boundaries: U.S. Census Bureau"
 );
 
 map.createPane("countiesPane");
