@@ -1,50 +1,35 @@
-# CQI v1 Web Map
+# Storm Chase Quality Index (CQI) v1
 
-This folder is ready to publish with GitHub Pages.
+The Storm Chase Quality Index (CQI) is a county-level map designed to evaluate how favorable a location is for seeing, reaching, and tracking a tornado, assuming a tornado is occurring there.
 
-## Files
+CQI evaluates chase quality, not tornado frequency.
+
+## Public web map
+
+The public map is hosted with GitHub Pages and uses Leaflet for interactive county rendering.
+
+### Public files
 
 - `index.html` — map page
 - `style.css` — visual styling and mobile layout
-- `map.js` — map behavior, legend, hover, and county details
-- `data/counties.geojson` — simplified CQI county data
+- `map-protected.js` — map behavior, interaction, and protected API requests
+- `data/counties-public.geojson` — county geometry and public category information only
 - `data/states.geojson` — state outlines
-- `.nojekyll` — tells GitHub Pages to serve the files directly
 
-## Publish on GitHub Pages
+Exact CQI scores, national rankings, and component scores are not stored in this repository. They are served county-by-county through a protected backend.
 
-1. Create a new **public** GitHub repository, preferably named `cqi-map`.
-2. Upload every file and folder from this package to the root of the repository.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and the `/ (root)` folder.
-6. Save and wait for GitHub to publish the site.
+## Copyright and permitted use
 
-The URL will normally be:
+**Storm Chase Quality Index (CQI) © 2026 Tucker Weather. All rights reserved.**
 
-`https://YOUR-USERNAME.github.io/cqi-map/`
+The CQI scoring dataset, derived scores, methodology, map presentation, and associated original materials may not be reproduced, redistributed, republished, sold, incorporated into another product or service, or presented as another party's work without prior written permission from Tucker Weather.
 
-## Embed in Squarespace
+Public access to this repository and web map does not grant an open-source license or permission to reuse CQI materials beyond ordinary viewing and personal reference.
 
-Add a Code block and paste:
-
-```html
-<div style="width:100%; height:780px;">
-  <iframe
-    src="https://YOUR-USERNAME.github.io/cqi-map/"
-    title="Interactive Storm Chase Quality Index map"
-    loading="lazy"
-    style="width:100%; height:100%; border:0; display:block;"
-    allowfullscreen>
-  </iframe>
-</div>
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
+Third-party geographic boundaries, libraries, and source datasets remain subject to their respective licenses and terms.
 
 ## Notes
 
-- No paid map service or tile provider is used.
-- City labels can be added later as a separate layer.
 - The map uses Leaflet from a public CDN.
+- Exact county scores and component values are retrieved from the CQI API only when requested.
 - CQI measures the quality of the chase environment, not tornado frequency.
