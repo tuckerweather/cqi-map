@@ -1,8 +1,8 @@
-# Storm Chase Quality Index (CQI) v1
+# Chase Quality Index (CQI) v1
 
-The Storm Chase Quality Index (CQI) is a county-level map designed to evaluate how favorable a location is for seeing, reaching, and tracking a tornado, assuming a tornado is occurring there.
+The Chase Quality Index (CQI) is a county-level map designed to evaluate how favorable a location is for chasing a storm, assuming one is occurring there.
 
-CQI evaluates chase quality, not tornado frequency.
+CQI evaluates chase quality, not storm frequency.
 
 ## Public web map
 
@@ -20,9 +20,9 @@ Exact CQI scores, national rankings, and component scores are not stored in this
 
 ## Copyright and permitted use
 
-**Storm Chase Quality Index (CQI) © 2026 Tucker Weather. All rights reserved.**
+**Storm Chase Quality Index (CQI) © 2026 Tucker Antico. All rights reserved.**
 
-The CQI scoring dataset, derived scores, methodology, map presentation, and associated original materials may not be reproduced, redistributed, republished, sold, incorporated into another product or service, or presented as another party's work without prior written permission from Tucker Weather.
+The CQI scoring dataset, derived scores, methodology, map presentation, and associated original materials may not be reproduced, redistributed, republished, sold, incorporated into another product or service, or presented as another party's work without prior written permission from Tucker Antico.
 
 Public access to this repository and web map does not grant an open-source license or permission to reuse CQI materials beyond ordinary viewing and personal reference.
 
@@ -32,4 +32,4 @@ Third-party geographic boundaries, libraries, and source datasets remain subject
 
 - The map uses Leaflet from a public CDN.
 - Exact county scores and component values are retrieved from the CQI API only when requested.
-- CQI measures the quality of the chase environment, not tornado frequency.
+- CQI measures the quality of the chase environment, not storm frequency.
