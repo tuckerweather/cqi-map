@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive Storm Chase Quality Index county map.">
+  <title>Storm Chase Quality Index Map</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIINfQ3ynh++c8pS9uIquVvW/8Gx9x0Q2z0="
+    crossorigin=""
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <div id="map" aria-label="Interactive Storm Chase Quality Index county map"></div>
+
+    <div id="loading" role="status" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <span>Loading CQI map…</span>
+    </div>
+
+    <button id="reset-view" class="map-button" type="button" aria-label="Reset map to national view">
+      Reset view
+    </button>
+
+    <button id="legend-toggle" class="map-button" type="button" aria-expanded="false" aria-controls="legend">
+      Legend
+    </button>
+
+    <section id="legend" class="map-panel legend-panel collapsed" aria-label="CQI map legend">
+      <div class="panel-heading">
+        <strong>Storm Chase Quality</strong>
+        <span>CQI v1</span>
+      </div>
+      <div id="legend-items"></div>
+    </section>
+
+    <aside id="details" class="map-panel details-panel" aria-live="polite">
+      <button id="close-details" type="button" aria-label="Close county details">×</button>
+      <div id="details-content">
+        <div class="empty-state">
+          <strong>Select a county</strong>
+          <span>Click any county for its CQI score and component breakdown.</span>
+        </div>
+      </div>
+    </aside>
+
+    <div id="map-note">
+      CQI evaluates chase quality, not tornado frequency.
+    </div>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+  </script>
+
+  <script src="map-protected.js?v=1"></script>
+</body>
+</html>
