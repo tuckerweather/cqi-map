@@ -20,7 +20,7 @@ Exact CQI scores, national rankings, and component scores are not stored in this
 
 ## Copyright and permitted use
 
-**Storm Chase Quality Index (CQI) © 2026 Tucker Antico. All rights reserved.**
+**Chase Quality Index (CQI) © 2026 Tucker Antico. All rights reserved.**
 
 The CQI scoring dataset, derived scores, methodology, map presentation, and associated original materials may not be reproduced, redistributed, republished, sold, incorporated into another product or service, or presented as another party's work without prior written permission from Tucker Antico.
 
