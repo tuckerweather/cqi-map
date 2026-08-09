@@ -320,6 +320,12 @@ body {
   font-size: 13px;
 }
 
+.map-credit {
+  margin-top: 3px;
+  font-size: 11px;
+  opacity: 0.75;
+}
+
 @media (max-width: 680px) {
   #app {
     min-height: 600px;
